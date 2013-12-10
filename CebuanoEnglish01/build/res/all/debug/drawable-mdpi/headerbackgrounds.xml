@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <gradient
+            android:startColor="#ff464546"
+            android:endColor="#ff7f7b81"
+            android:angle="270" />
+        <corners
+            android:topLeftRadius="4dp"
+            android:topRightRadius="4dp"
+            android:bottomLeftRadius="1dp"
+            android:bottomRightRadius="1dp"/>
+        <padding
+            android:left="2dp"
+            android:top="4dp"
+            android:right="1dp"
+            android:bottom="2dp" />
+    </shape>
+</item>
+</selector><!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/CebuanoEnglish01Project/CebuanoEnglish01/src/main/res/drawable-mdpi/headerbackgrounds.xml -->

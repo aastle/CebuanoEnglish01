@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/detailsLayout"
+    android:paddingLeft="4dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/english"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="english:"
+        android:linksClickable="false"
+        android:layout_toRightOf="@+id/cebuano"
+        android:typeface="sans"
+        android:background="#f3f2ef"
+        android:textColor="#050d7a"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/cebuano"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:text="cebuano:"
+        android:layout_alignParentTop="false"
+        android:typeface="sans"
+        android:textStyle="bold" />
+</RelativeLayout>

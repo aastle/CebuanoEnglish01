@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignParentRight="true"
+        android:showDividers="beginning|end"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="type a word to translate..."
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="30sp"
+            android:editable="true"
+            android:selectAllOnFocus="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/inputrounded"
+            android:singleLine="true"
+            android:imeOptions="actionGo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="translate"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonrounded"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView3"
+            android:paddingTop="5dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/translation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ff0a05"
+        android:textSize="20sp" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewTrans"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/prometheus/AndroidStudioProjects/CebuanoEnglish01Project/CebuanoEnglish01/src/main/res/layout/activity_main.xml -->
